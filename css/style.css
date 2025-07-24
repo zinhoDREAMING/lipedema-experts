@@ -1,0 +1,402 @@
+*
+    {margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+/* FONTES */
+@font-face 
+    {font-family: "OpenSans-ExtraBold";
+    src: url("../fonts/OpenSans-ExtraBold.ttf") format("truetype");}
+
+@font-face 
+    {font-family: "OpenSans-SemiBold";
+    src: url("../fonts/OpenSans-SemiBold.ttf") format("truetype");}
+
+@font-face
+    {font-family: "OpenSans-Bold";
+    src: url("../fonts/OpenSans-Bold.ttf") format("truetype");}
+
+@font-face
+    {font-family: "OpenSans-Regular";
+    src: url("../fonts/OpenSans-Regular.ttf") format("truetype");}
+
+/* PADRONIZAÇÕES PADRÃO PARA TUDO */
+
+.interface
+    {width: 1252px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;}
+
+body
+    {background-color: #050f28;
+    font-family: "OpenSans";
+    color: #FFFFFF;}
+
+.background
+    {background-color: rgba(255,255,255,5%);
+    border-radius: 60px;
+    margin: 0 30px 50px 30px;
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+
+.pag1-box, .pag2-box, .pag3-box, .pag4-box, .pag5-box, .pag6-box, .pag7-box, .pag8-box, .pag9-box, .pag10-box, .pag11-box, .pag-location-box, .pag-button-box, .pag-patro-box, .footer-box
+    {margin: 100px 0 100px 0;}
+
+/* HEADER */
+
+header
+    {width: 100%;
+    padding:0;
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    font-family: "OpenSans-SemiBold";
+    margin: 30px 50px 30px 0;}
+
+header .background-header
+    {background-color: rgba(255,255,255,5%);
+    margin: 0 30px 0;
+    border-radius: 60px;
+    padding: 20px;}
+
+header .interface
+    {display: flex;
+    justify-content: space-between;
+    align-items: center;}
+
+.ativos
+    {display: flex;
+    justify-content: center;
+    align-items: center;}
+
+.paises img
+    {width: 39px;
+    height: 39px;}
+
+.logo-branca-mobile
+    {display: none;}
+    
+/* MENU DINAMICO */
+
+header.rolar
+    {background-color: #050f28;
+    position: fixed;
+    padding: 20px 0 20px 0; /* DIMINUI O TAMANHO DO HEADER QUANDO ROLA A PAGINA */
+    z-index: 99999;
+    top: -30px;}   
+
+.background-header.transparent 
+    {background-color: transparent;}
+
+/* MENU "HOME" */
+
+nav.menu
+    {color: white;
+    list-style: none;
+    position: relative;
+    font-size: 1.25rem;}
+
+nav.menu a
+    {text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: block;}
+
+nav.menu .submenu
+    {display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    background-color: #050f28;
+    border-radius: 10px;}
+
+.submenu li
+    {display: block;}
+
+.submenu li:hover
+    {background-color: rgba(255, 255, 255, 0.418);
+    border-radius: 10px;}
+
+.menu:hover .submenu
+    {display: block;}
+
+/* MENU "PAISES" */
+
+.home-buttom-box
+    {display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px}
+
+.home-buttom-box:hover
+    {cursor: pointer;}
+
+.home-buttom-box a
+    {padding: 10px 0 10px 0;}
+
+nav.menu-paises
+    {color: white;
+    font-size: 1.25rem;
+    list-style: none;
+    position: relative;}
+
+nav.menu-paises a
+    {text-decoration: none;
+    color: white;
+    display: block;}
+
+ .submenu-paises a
+    {padding: 10px 20px;}
+
+nav.menu-paises .submenu-paises
+    {display: none;
+    position: absolute;
+    top: 100%;
+    left: -20px;
+    background-color: #050f28;
+    border-radius: 10px;}
+
+.submenu-paises li
+    {display: block;}
+
+.submenu-paises li:hover
+    {background-color: rgba(255, 255, 255, 0.418);
+    border-radius: 10px;}
+
+.menu-paises:hover .submenu-paises
+    {display: block;}
+
+/* PAGE 1  STYLES */
+
+.pag1 .background
+    {background-image: url(../images/pag1-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;} 
+
+.pag1-box
+    {display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
+
+.pag1-txt
+    {text-align: center;}
+
+.pag1-img
+    {display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 396px;
+    gap: 32px;}
+
+.pag1-txt p
+    {margin-bottom: 51px;
+    font-size: 3.75rem;
+    font-family: "OpenSans-SemiBold";}
+
+.pag1-txt h1
+    {font-size: 4.375rem;
+    font-family: "OpenSans-ExtraBold";
+    margin-bottom: 30px;}
+
+/* PAGE 2 STYLES */
+
+.pag2-box
+    {display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 100%;}
+
+.pag2 h2
+    {padding: 125px 515px;
+    width: 100%;
+    height: 100%;
+    font-family: "OpenSans-ExtraBold";
+    font-size: 2.5rem;
+    border-radius: 60px;}
+
+.pag2 
+    {color: white;
+    text-align: center;
+    font-size: 1.875rem;
+    z-index: 2;}
+
+.paciente
+    {background-image: url(../images/paciente-button.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    aspect-ratio: auto;
+    position: relative;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
+.profesionales
+    {background-image: url(../images/profesionales-button.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    aspect-ratio: auto;
+    position: relative;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
+.formacion
+    {background-image: url(../images/formacion-button.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    aspect-ratio: auto;
+    position: relative;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
+.pag2 .pag2-txt  
+    {position: relative; 
+    z-index: 2;
+    color: white; 
+    font-size: 1.875rem; 
+    text-align: center}
+
+.pag2 .paciente, .pag2 .profesionales, .pag2 .formacion
+    {cursor: pointer;}
+
+.pag2 .paciente a, .pag2 .profesionales a, .pag2 .formacion a
+    {text-decoration: none;
+    color: inherit;}
+
+/* PAGINA 2 - EFEITO HOVER DOS BOTOES */
+
+.pag2 .paciente::before, .pag2 .profesionales::before, .pag2 .formacion::before 
+    {content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white; 
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    border-radius: 60px;
+    z-index: 1;}
+
+.pag2 .paciente:hover::before, .pag2 .profesionales:hover::before, .pag2 .formacion:hover::before {
+    opacity: 1;}
+
+.pag2 .pag2-txt:hover 
+    {color: #050f28;}
+
+
+/* PAGE 3 STYLES */
+
+.pag3-box h3
+    {font-size: 2.5rem;
+    font-family: "OpenSans-ExtraBold";
+    text-align: center;}
+
+.pag3-box
+    {display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;}
+
+/* PATROCINADORES STYLES */
+
+.box-patrocinadores
+    {display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 38px;}    
+
+.box-colaboradores
+    {display: flex;
+    justify-content: center;
+    align-items: center;}
+
+.box-colaboradores img
+    {width: 234px;
+    height: 234px;}
+
+/* FOOTER STYLES */
+
+
+.rodape .background
+    {background-image: url(../images/footer-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;} 
+
+.footer-box
+    {display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;}
+
+.footer-box1
+    {display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;}
+
+.rodape .footer-bottom
+    {display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;}
+
+.footer-txt-upper img, .footer-txt-lower img
+        {width: 30px; 
+        max-height: 30px;} 
+
+.footer-txt-upper, .footer-txt-lower 
+    {display: flex; 
+    align-items: center; 
+    gap: 30px;}
+
+.footer-txt-upper
+    {margin-bottom: 39px;}
+
+.footer-txt-upper-txt, .footer-txt-lower-txt
+    {display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    gap: 5px;}
+
+.footer-txt-upper-txt h3, .footer-txt-lower-txt h3
+    {font-family: "OpenSans-Bold";}
+
+
+.footer-txt-upper-txt p, .footer-txt-lower-txt p
+    {font-family: "OpenSans-SemiBold";}
+
+.footer-bottom p
+    {font-family: "OpenSans-Regular";}
+
+.rodape
+    {color: white;
+    text-align: center;
+    font-size: 1.25rem;}

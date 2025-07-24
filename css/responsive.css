@@ -1,0 +1,238 @@
+/* REPONSIVIDADE */
+
+@media screen and (max-width: 1380px) {
+  .interface {
+    width: 100%;
+  }
+
+  .background {
+    margin: 0 30px 15px 30px;
+    padding: 10px;
+  }
+
+  /* PAG1 RESPONSE */
+
+  .pag1-img img {
+    max-width: 300px;
+    min-width: 143px;
+  }
+
+  /* PAGINA DE PATROCINIO */
+
+  .box-patrocinadores {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .box-patrocinadores img {
+    aspect-ratio: auto;
+  }
+
+  /* FOOTER RESPONSE */
+
+  .footer-box1 {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-box {
+    margin: 40px 0;
+    gap: 10px;
+  }
+
+  .footer-txt-upper {
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .footer-txt-lower {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  /* PAG1 RESPONSE */
+
+  .pag1-txt p {
+    margin-bottom: 51px;
+    font-size: 2.5rem;
+    font-family: "OpenSans-SemiBold";
+  }
+
+  .pag1-txt h1 {
+    font-size: 3.125rem;
+    font-family: "OpenSans-ExtraBold";
+    margin-bottom: 30px;
+  }
+
+  .pag1-img img {
+    max-width: 200px;
+    min-width: 143px;
+  }
+
+  .box-patrocinadores img {
+    max-width: 390px;
+    min-width: 280px;
+  }
+
+  /* FOOTER RESPONSE */
+
+  .footer-row1 {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .pag1-img img {
+    max-width: 160px;
+    min-width: 143px;
+  }
+}
+
+/* MOBILE MODE */
+
+@media screen and (max-width: 510px) {
+  /* HEADER/MENU RESPONSE */
+
+  header .interface {
+    width: 100%;
+  }
+
+  .background {
+    margin: 0 15px 35px 15px;
+  }
+
+  header .background-header {
+    margin: 0 15px 0;
+  }
+
+  nav.menu a {
+    font-size: 0.9rem;
+  }
+
+  nav.menu-paises a {
+    font-size: 0.9rem;
+  }
+
+  .paises img {
+    width: 29px;
+    height: 29px;
+  }
+
+  .logo-branca {
+    display: none;
+  }
+
+  .logo-branca-mobile {
+    display: grid;
+  }
+
+  header.rolar {
+    display: none;
+  }
+
+  .background-header.transparent {
+    display: none;
+  }
+
+  /* PAG1 RESPONSE FOR MOBILE */
+
+  .pag1 .background {
+    height: 530px;
+  }
+
+  .pag1-img {
+    gap: 10px;
+  }
+
+  .pag1-img img {
+    max-width: 100px;
+    min-width: 110px;
+  }
+
+  .pag1-txt p {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-family: "OpenSans-SemiBold";
+  }
+
+  .pag1-txt h1 {
+    font-size: 3rem;
+    font-family: "OpenSans-ExtraBold";
+    margin-bottom: 20px;
+  }
+
+  /* PAG2 RESPONSE */
+
+  .pag2 h2 {
+    font-family: "OpenSans-ExtraBold";
+    font-size: 1.9rem;
+  }
+
+  .pag2-box {
+    margin: 5px 0;
+    gap: 10px;
+  }
+
+  .paciente,
+  .profesionales,
+  .formacion {
+    height: 150px;
+  }
+
+  .pag2 .interface {
+    width: 100%;
+  }
+
+  /* PAG3 RESPONSE */
+
+  .box-patrocinadores img {
+    max-width: 250px;
+    max-height: 80px;
+  }
+
+  .box-colaboradores img {
+    max-width: 130px;
+    max-height: 130px;
+  }
+
+  .pag3-box {
+    margin: 35px 0 35px 0;
+  }
+
+  .pag3-box h3 {
+    font-size: 2.25rem;
+  }
+
+  /* FOOTER RESPONSE */
+
+  .logo-footer {
+    min-width: 320px;
+    max-width: 320px;
+  }
+
+  .footer-box1 {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-box {
+    margin: 40px 0;
+    gap: 10px;
+  }
+
+  .footer-txt-upper {
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .footer-txt-lower {
+    gap: 10px;
+  }
+
+  .rodape {
+    font-size: 1rem;
+  }
+}

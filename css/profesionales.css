@@ -1,0 +1,824 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #ffffff;
+}
+
+/* FONTES */
+@font-face {
+  font-family: "OpenSans-ExtraBold";
+  src: url("../fonts/OpenSans-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "OpenSans-SemiBold";
+  src: url("../fonts/OpenSans-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url("../fonts/OpenSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
+}
+
+/* PADRONIZAÇÕES PADRÃO PARA TUDO */
+
+.interface {
+  width: 1252px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+body {
+  background-color: #050f28;
+  font-family: "OpenSans";
+  color: #ffffff;
+}
+
+.background {
+  background-color: rgba(255, 255, 255, 5%);
+  border-radius: 60px;
+  margin: 0 30px 50px 30px;
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pag1-box,
+.pag2-box,
+.pag3-box,
+.pag4-box,
+.pag5-box,
+.pag6-box,
+.pag7-box,
+.pag8-box,
+.pag9-box,
+.pag10-box,
+.pag11-box,
+.pag-location-box,
+.pag-button-box,
+.pag-patro-box,
+.footer-box {
+  margin: 100px 0 100px 0;
+}
+
+/* HEADER */
+
+header {
+  width: 100%;
+  padding: 0;
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  font-family: "OpenSans-SemiBold";
+  margin: 30px 50px 30px 0;
+}
+
+header .background-header {
+  background-color: rgba(255, 255, 255, 5%);
+  margin: 0 30px 0;
+  border-radius: 60px;
+  padding: 20px;
+}
+
+header .interface {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ativos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.paises img {
+  width: 39px;
+  height: 39px;
+}
+
+.logo-branca-mobile {
+  display: none;
+}
+
+.subscribir {
+  color: black;
+  font-size: 1.25rem;
+  margin: 0 10px;
+  border: none;
+  border-radius: 60px;
+  padding: 10px 20px;
+  font-family: "OpenSans-SemiBold";
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.subscribir:hover {
+  opacity: 0.4;
+}
+
+/* MENU DINAMICO */
+
+header.rolar {
+  background-color: #050f28;
+  position: fixed;
+  padding: 20px 0 20px 0; /* DIMINUI O TAMANHO DO HEADER QUANDO ROLA A PAGINA */
+  z-index: 99999;
+  top: -30px;
+}
+
+.background-header.transparent {
+  background-color: transparent;
+}
+
+/* MENU "HOME" */
+
+nav.menu {
+  color: white;
+  list-style: none;
+  position: relative;
+  font-size: 1.25rem;
+}
+
+nav.menu a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  display: block;
+}
+
+nav.menu .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 200px;
+  background-color: #050f28;
+  border-radius: 10px;
+}
+
+.submenu li {
+  display: block;
+}
+
+.submenu li:hover {
+  background-color: rgba(255, 255, 255, 0.418);
+  border-radius: 10px;
+}
+
+.menu:hover .submenu {
+  display: block;
+}
+
+/* MENU "PAISES" */
+
+.home-buttom-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.home-buttom-box:hover {
+  cursor: pointer;
+}
+
+.home-buttom-box a {
+  padding: 10px 0 10px 0;
+}
+
+nav.menu-paises {
+  color: white;
+  font-size: 1.25rem;
+  list-style: none;
+  position: relative;
+}
+
+nav.menu-paises a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+.submenu-paises a {
+  padding: 10px 20px;
+}
+
+nav.menu-paises .submenu-paises {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -20px;
+  background-color: #050f28;
+  border-radius: 10px;
+}
+
+.submenu-paises li {
+  display: block;
+}
+
+.submenu-paises li:hover {
+  background-color: rgba(255, 255, 255, 0.418);
+  border-radius: 10px;
+}
+
+.menu-paises:hover .submenu-paises {
+  display: block;
+}
+
+/* PAG9 STYLES */
+
+.pag9-box {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.pag9-txt {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: left;
+}
+
+.pag9-txt h1 {
+  font-family: "OpenSans-ExtraBold";
+  font-size: 60px;
+}
+
+.pag9-txt p {
+  font-family: "OpenSans-SemiBold";
+  font-size: 30px;
+}
+
+/* PAG9 - STYLES DOS ESPECIALISTAS */
+
+.pag9-especialistas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 100px 32px;
+  justify-content: center;
+  align-items: center;
+}
+
+.pag9-box-esp-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.pag9-box-esp-1 h2 {
+  font-size: 24px;
+  font-family: "OpenSans-ExtraBold";
+}
+
+.pag9-flag-txt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-size: 20px;
+  font-family: "OpenSans-Regular";
+  margin-top: -20px;
+}
+
+.pag9-flag-txt img {
+  max-width: 30px;
+  max-height: 30px;
+}
+
+.pag9-box-esp-1 .Jaume {
+  background-color: #aaa;
+  border-radius: 100%;
+}
+
+/* STYLES DOS ESPECIALISTAS/END */
+
+/* PAG1 STYLES */
+
+.pag1 .background {
+  background-image: url(../images/profesionales-pag1-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.pag1 .interface {
+  justify-content: start;
+}
+
+.pag1-box {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: start;
+  text-align: left;
+}
+
+.pag1-box h2 {
+  font-family: "OpenSans-ExtraBold";
+  font-size: 5rem;
+}
+
+.pag1-box p {
+  font-family: "OpenSans-SemiBold";
+  font-size: 2.5rem;
+}
+
+.pag1-box span {
+  display: inline-block;
+  font-size: 5rem;
+}
+
+/* PAG2 STYLES */
+
+.pag2 .background {
+  background-image: url(../images/prof-pag2-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.pag2-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.pag2-txt {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.pag2-box h2 {
+  font-family: "OpenSans-ExtraBold";
+  font-size: 3.75rem;
+}
+
+.pag2-box p {
+  font-family: "OpenSans-SemiBold";
+  font-size: 1.875rem;
+}
+
+.pag2-txt span {
+  display: inline-block;
+  font-size: 3.75rem;
+}
+
+/* PAG3 STYLES */
+
+.pag3-box {
+  display: flex;
+  gap: 32px;
+}
+
+.pag3-img {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.pag3-txt {
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+  text-align: right;
+}
+
+.pag3-box h2 {
+  font-family: "OpenSans-ExtraBold";
+  font-size: 60px;
+}
+
+.pag3-box p {
+  font-family: "OpenSans-SemiBold";
+  font-size: 30px;
+}
+
+/* PAG4 STYLES */
+
+.pag4 .background {
+  background-image: url(../images/prof-pag4-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.pag4-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.pag4-box h2 {
+  font-family: "OpenSans-ExtraBold";
+  font-size: 60px;
+}
+
+.pag4-box p {
+  font-family: "OpenSans-SemiBold";
+  font-size: 30px;
+}
+
+/* PAG5 STYLES */
+
+.pag5-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.pag5-txt {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.pag5-img {
+  display: flex;
+  gap: 30px;
+}
+
+.pag5-box h2 {
+  font-family: "OpenSans-ExtraBold";
+  font-size: 60px;
+}
+
+.pag5-box p {
+  font-family: "OpenSans-SemiBold";
+  font-size: 30px;
+}
+
+/* PAG6 STYLES */
+
+.pag6 .background {
+  background-image: url(../images/prof-pag6-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.pag6-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.pag6-txt {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: right;
+}
+
+.pag6-img {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.pag6-box h2 {
+  font-family: "OpenSans-ExtraBold";
+  font-size: 60px;
+}
+
+.pag6-box p {
+  font-family: "OpenSans-SemiBold";
+  font-size: 30px;
+}
+
+/* PAG7 STYLES */
+
+.pag7-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.pag7-checks {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.pag7-check-1 {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  padding: 30px;
+  display: flex;
+  gap: 30px;
+  text-align: left;
+  align-items: center;
+}
+
+.pag7-box h1 {
+  font-size: 40px;
+  font-family: "OpenSans-ExtraBold";
+}
+
+.pag7-box span {
+  display: inline-block;
+  font-size: 60px;
+}
+
+.pag7-check-1 i {
+  font-size: 80px;
+}
+
+.pag7-check-1 h2 {
+  font-size: 30px;
+  font-family: "OpenSans-ExtraBold";
+}
+
+.pag7-check-1 p {
+  font-size: 30px;
+  font-family: "OpenSans-SemiBold";
+}
+
+/* PAG8 STYLES */
+
+.pag8-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.pag8-row {
+  display: flex;
+  gap: 50px;
+}
+
+.pag8-box h3 {
+  font-size: 60px;
+  font-family: "OpenSans-ExtraBold";
+}
+
+/* PAG10 STYLES */
+
+.pag10 .background {
+  background-image: url(../images/prof-pag10-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.pag10-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  text-align: right;
+}
+
+.pag10-box h2 {
+  font-family: "OpenSans-ExtraBold";
+  font-size: 60px;
+}
+
+.pag10-box p {
+  font-family: "OpenSans-SemiBold";
+  font-size: 30px;
+}
+
+.pag10-box span {
+  display: inline-block;
+}
+
+/* PAG11 STYLES */
+
+.pag11-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+}
+
+.pag11-box h2 {
+  font-family: "OpenSans-ExtraBold";
+  font-size: 60px;
+}
+
+.pag11-box p {
+  font-family: "OpenSans-SemiBold";
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.pag11-box span {
+  display: inline-block;
+}
+
+/* PAG-LOCATION STYLES */
+
+.pag-location-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  text-align: left;
+}
+
+.pag-location-txt {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.pag-loc-loc {
+  width: 100%;
+  height: 100%;
+}
+
+.pag-loc-img-txt {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+}
+
+.pag-location h2 {
+  font-size: 60px;
+  font-family: "OpenSans-ExtraBold";
+}
+
+.pag-location p {
+  font-size: 30px;
+  font-family: "OpenSans-ExtraBold";
+}
+
+.pag-loc-img-txt {
+  font-size: 30px;
+  font-family: "OpenSans-SemiBold";
+}
+
+/* PAG-BUTTON STYLES */
+
+.pag-button .background {
+  background-image: url(../images/pag13-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.pag-button-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.pag-button-box button {
+  font-size: 60px;
+  font-family: "OpenSans-Bold";
+  color: #050f28;
+  cursor: pointer;
+  width: 1258px;
+  border-radius: 60px;
+  height: 118px;
+  border: none;
+  transition: all 0.5s ease;
+}
+
+.pag-button-box button:hover {
+  color: #ffffff;
+  background-color: #050f28;
+}
+
+/* PAGE PATROCINADORES STYLES */
+
+.pag-patro-box h3 {
+  color: white;
+  font-size: 2.5rem;
+  font-family: "OpenSans-ExtraBold";
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.box-patrocinadores {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 38px;
+  margin-bottom: 50px;
+}
+
+.box-patrocinadores img {
+  width: 100%;
+  height: 113px;
+}
+
+.box-colaboradores {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-colaboradores img {
+  width: 234px;
+  height: 234px;
+}
+
+/* FOOTER STYLES */
+
+.rodape .background {
+  background-image: url(../images/footer-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footer-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.footer-box1 {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.rodape .footer-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.footer-txt-upper img,
+.footer-txt-lower img {
+  width: 30px;
+  max-height: 30px;
+}
+
+.footer-txt-upper,
+.footer-txt-lower {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer-txt-upper {
+  margin-bottom: 39px;
+}
+
+.footer-txt-upper-txt,
+.footer-txt-lower-txt {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.footer-txt-upper-txt h3,
+.footer-txt-lower-txt h3 {
+  font-family: "OpenSans-Bold";
+}
+
+.footer-txt-upper-txt p,
+.footer-txt-lower-txt p {
+  font-family: "OpenSans-SemiBold";
+}
+
+.footer-bottom p {
+  font-family: "OpenSans-Regular";
+}
+
+.rodape {
+  color: white;
+  text-align: center;
+  font-size: 1.25rem;
+}

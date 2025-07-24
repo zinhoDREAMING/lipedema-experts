@@ -1,0 +1,883 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* FONTES */
+@font-face {
+  font-family: "OpenSans-ExtraBold";
+  src: url("../fonts/OpenSans-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "OpenSans-SemiBold";
+  src: url("../fonts/OpenSans-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url("../fonts/OpenSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
+}
+
+/* PADRONIZAÇÕES PADRÃO PARA TUDO */
+
+.interface {
+  width: 1252px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body {
+  background-color: #050f28;
+  font-family: "OpenSans";
+  color: #ffffff;
+}
+
+.background {
+  background-color: rgba(255, 255, 255, 5%);
+  border-radius: 60px;
+  margin: 0 30px 50px 30px;
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.interface {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.pag1-box,
+.pag2-box,
+.pag3-box,
+.pag4-box,
+.pag5-box,
+.pag6-box,
+.pag7-box,
+.pag8-box,
+.pag9-box,
+.pag10-box,
+.pag11-box,
+.pag-location-box,
+.pag-button-box,
+.pag-patro-box,
+.footer-box {
+  margin: 100px 0 100px 0;
+}
+
+/* HEADER */
+
+header {
+  width: 100%;
+  padding: 0;
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  font-family: "OpenSans-SemiBold";
+  margin: 30px 50px 30px 0;
+}
+
+header .background-header {
+  background-color: rgba(255, 255, 255, 5%);
+  margin: 0 30px 0;
+  border-radius: 60px;
+  padding: 20px;
+}
+
+header .interface {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ativos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.paises img {
+  width: 39px;
+  height: 39px;
+}
+
+.logo-branca-mobile {
+  display: none;
+}
+
+.subscribir {
+  color: black;
+  font-size: 1.25rem;
+  margin: 0 10px;
+  border: none;
+  border-radius: 60px;
+  padding: 10px 20px;
+  font-family: "OpenSans-SemiBold";
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.subscribir:hover {
+  opacity: 0.4;
+}
+
+/* MENU DINAMICO */
+
+header.rolar {
+  background-color: #050f28;
+  position: fixed;
+  padding: 20px 0 20px 0; /* DIMINUI O TAMANHO DO HEADER QUANDO ROLA A PAGINA */
+  z-index: 99999;
+  top: -30px;
+}
+
+.background-header.transparent {
+  background-color: transparent;
+}
+
+/* MENU "HOME" */
+
+nav.menu {
+  color: white;
+  list-style: none;
+  position: relative;
+  font-size: 1.25rem;
+}
+
+nav.menu a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  display: block;
+}
+
+nav.menu .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 200px;
+  background-color: #050f28;
+  border-radius: 10px;
+}
+
+.submenu li {
+  display: block;
+}
+
+.submenu li:hover {
+  background-color: rgba(255, 255, 255, 0.418);
+  border-radius: 10px;
+}
+
+.menu:hover .submenu {
+  display: block;
+}
+
+/* MENU "PAISES" */
+
+.home-buttom-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.home-buttom-box:hover {
+  cursor: pointer;
+}
+
+.home-buttom-box a {
+  padding: 10px 0 10px 0;
+}
+
+nav.menu-paises {
+  color: white;
+  font-size: 1.25rem;
+  list-style: none;
+  position: relative;
+}
+
+nav.menu-paises a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+.submenu-paises a {
+  padding: 10px 20px;
+}
+
+nav.menu-paises .submenu-paises {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -20px;
+  background-color: #050f28;
+  border-radius: 10px;
+}
+
+.submenu-paises li {
+  display: block;
+}
+
+.submenu-paises li:hover {
+  background-color: rgba(255, 255, 255, 0.418);
+  border-radius: 10px;
+}
+
+.menu-paises:hover .submenu-paises {
+  display: block;
+}
+
+/* AGORA COMEÇA DE VERDADE */
+
+/* PAG1 STYLES */
+
+.pag1 .background {
+  background-image: url(../images/pacientes-pg1-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.pag1 .interface {
+  justify-content: start;
+}
+
+.pag1-box {
+  text-align: left;
+}
+
+.pag1-txt1 h1 {
+  font-size: 5rem;
+  font-family: "OpenSans-ExtraBold";
+  color: white;
+}
+
+.pag1 .pag1-txt2 p {
+  font-size: 2.5rem;
+  font-family: "OpenSans-SemiBold";
+  color: white;
+}
+
+/* PAG2 STYLES */
+
+.pag2-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.pag2-txt-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 30px;
+}
+
+.pag2-txt1 h1 {
+  font-size: 3.75rem;
+  font-family: "OpenSans-ExtraBold";
+  color: white;
+  text-align: left;
+}
+
+.pag2-txt2 p {
+  font-size: 1.875rem;
+  font-family: "OpenSans-SemiBold";
+  color: white;
+  text-align: left;
+}
+
+.pag2-img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+/* PAG3 STYLES */
+
+.pag3 .background {
+  background-image: url(../images/pacientes-pag3-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.pag3-box {
+  display: flex;
+  gap: 30px;
+}
+
+.pag3-img-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.pag3-txt-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 30px;
+}
+
+.pag3-txt1 h1 {
+  font-size: 3.65rem;
+  font-family: "OpenSans-ExtraBold";
+  color: white;
+  text-align: right;
+}
+
+.pag3-txt2 p {
+  font-size: 1.875rem;
+  font-family: "OpenSans-SemiBold";
+  color: white;
+  text-align: right;
+}
+
+/* PAG4 STYLES */
+
+.pag4-box {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: center;
+}
+
+.pag4-ask-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  font-size: 1.875rem;
+  font-family: "OpenSans-SemiBold";
+}
+
+.pag4-ask1,
+.pag4-ask2,
+.pag4-ask3,
+.pag4-ask4 {
+  background-color: #293247;
+  border-radius: 60px;
+  width: 100%;
+  text-align: center;
+  padding: 30px;
+  font-size: 1.875rem;
+  font-family: "OpenSans-SemiBold";
+}
+
+.pag4-txt1 h1 {
+  font-size: 2.5rem;
+  font-family: "OpenSans-ExtraBold";
+}
+
+.pag4-txt1 span {
+  display: inline-block;
+  font-size: 3.75rem;
+}
+
+.pag4-txt2 p {
+  font-size: 1.875rem;
+  font-family: "OpenSans-SemiBold";
+}
+
+/* PAG5 STYLES */
+
+.pag5 .background {
+  background-image: url(../images/pag5-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.pag5-box {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: start;
+}
+
+.pag5-txt1 h1 {
+  font-size: 3.75rem;
+  font-family: "OpenSans-ExtraBold";
+}
+
+.pag5-txt2 p {
+  font-size: 1.875rem;
+  font-family: "OpenSans-SemiBold";
+}
+
+/* PAGG STYLES */
+
+.pag6 h1 {
+  font-size: 3.75rem;
+  font-family: "OpenSans-ExtraBold";
+  text-align: center;
+}
+
+.pag6 p {
+  font-size: 1.875rem;
+  font-family: "OpenSans-SemiBold";
+}
+
+.pag6-box {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.pag6-box-objetivos {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.pag6-row1,
+.pag6-row2 {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+
+.pag6-caixa1,
+.pag6-caixa2,
+.pag6-caixa3,
+.pag6-caixa4,
+.pag6-caixa5,
+.pag6-caixa6 {
+  background-color: #ffffff10;
+  padding: 30px;
+  border-radius: 30px;
+  text-align: left;
+  max-width: 396px;
+  min-height: 499px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* PAG7 STYLES */
+
+.pag7-box {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.pag7-txt {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: left;
+}
+
+.pag7-txt h1 {
+  font-family: "OpenSans-ExtraBold";
+  font-size: 3.75rem;
+}
+
+.pag7-txt p {
+  font-family: "OpenSans-SemiBold";
+  font-size: 1.875rem;
+}
+
+.pag7-row1 {
+  display: flex;
+  gap: 30px;
+}
+
+.pag7-row1 p {
+  font-family: "OpenSans-ExtraBold";
+  font-size: 1.688rem;
+}
+
+.pag7-profissao-flag p {
+  font-family: "OpenSans-Regular";
+  font-size: 1.25rem;
+}
+
+.pag7-doc1,
+.pag7-doc2,
+.pag7-doc3,
+.pag7-doc4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.pag7-profissao-flag {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-top: -25px;
+}
+
+.pag7-profissao-flag img {
+  width: 30px;
+  height: 30px;
+}
+
+.pag7-doc1 img {
+  background-color: #aaaaaa;
+  border-radius: 100%;
+}
+
+/* ROW2 STYLES */
+
+.pag7-doc5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.pag7-row2 {
+  font-family: "OpenSans-ExtraBold";
+  font-size: 1.688rem;
+}
+
+/* PAG8 STYLES */
+
+.pag8 .background {
+  background-image: url(../images/pag8-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.pag8-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.pag8-txt h2 {
+  font-size: 2.5rem;
+  font-family: "OpenSans-ExtraBold";
+}
+
+.pag8-txt h1 {
+  font-size: 3.75rem;
+  font-family: "OpenSans-ExtraBold";
+  margin-bottom: 30px;
+}
+
+.pag8-txt p {
+  font-size: 1.875rem;
+  font-family: "OpenSans-SemiBold";
+}
+
+/* PAG9 STYLES */
+
+.pag9 .background {
+  background-image: url(../images/pag9-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.pag9-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+
+.pag9-box h2 {
+  font-family: "OpenSans-ExtraBold";
+  font-size: 3.75rem;
+}
+
+.pag9-box p {
+  font-family: "OpenSans-SemiBold";
+  font-size: 1.875rem;
+}
+
+/* PAG10 STYLES */
+
+.pag10-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  text-align: right;
+}
+
+.pag10-img {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.pag10-box h2 {
+  font-family: "OpenSans-ExtraBold";
+  font-size: 3.75rem;
+  margin-bottom: 1.875rem;
+}
+
+.pag10-box p {
+  font-family: "OpenSans-SemiBold";
+  font-size: 1.875rem;
+  margin-bottom: 30px;
+}
+
+.pag10-box button {
+  background-color: #293247;
+  color: #ffffff;
+  font-family: "OpenSans-Bold";
+  font-size: 2.188rem;
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 60px;
+  border: none;
+  transition: all 0.5s ease;
+}
+
+.pag10-box button:hover {
+  background-color: white;
+  color: #050f28;
+}
+
+/* PAG11 STYLES */
+
+.pag11 .background {
+  background-image: url(../images/pag11-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.pag11-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pag11-box h2 {
+  font-family: "OpenSans-ExtraBold";
+  font-size: 3.75rem;
+}
+
+/* PAG-LOCATION STYLES */
+
+.pag-location-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  text-align: left;
+  margin: 100px 0 100px 0;
+}
+
+.pag-location-txt {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.pag-loc-loc {
+  width: 100%;
+  height: 100%;
+}
+
+.pag-loc-img-txt {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+}
+
+.pag-location h2 {
+  font-size: 60px;
+  font-family: "OpenSans-ExtraBold";
+}
+
+.pag-location p {
+  font-size: 30px;
+  font-family: "OpenSans-ExtraBold";
+}
+
+.pag-loc-img-txt {
+  font-size: 30px;
+  font-family: "OpenSans-SemiBold";
+}
+
+/* PAG-BUTTON STYLES */
+
+.pag-button .background {
+  background-image: url(../images/pag13-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.pag-button-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.pag-button-box button {
+  font-size: 3.75rem;
+  font-family: "OpenSans-Bold";
+  color: #050f28;
+  cursor: pointer;
+  width: 1258px;
+  border-radius: 60px;
+  height: 118px;
+  border: none;
+  transition: all 0.5s ease;
+}
+
+.pag-button-box button:hover {
+  color: #ffffff;
+  background-color: #050f28;
+}
+
+/* PAGE PATROCINADORES STYLES */
+
+.pag-patro-box h3 {
+  color: white;
+  font-size: 2.5rem;
+  font-family: "OpenSans-ExtraBold";
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.box-patrocinadores {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 38px;
+  margin-bottom: 50px;
+}
+
+.box-patrocinadores img {
+  width: 100%;
+  height: 113px;
+}
+
+.box-colaboradores {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-colaboradores img {
+  width: 234px;
+  height: 234px;
+}
+
+.pag-patro-box {
+  margin: 100px 0 100px 0;
+}
+
+/* FOOTER STYLES */
+
+.rodape .background {
+  background-image: url(../images/footer-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footer-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.footer-box1 {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.rodape .footer-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.footer-txt-upper img,
+.footer-txt-lower img {
+  width: 30px;
+  max-height: 30px;
+}
+
+.footer-txt-upper,
+.footer-txt-lower {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer-txt-upper {
+  margin-bottom: 39px;
+}
+
+.footer-txt-upper-txt,
+.footer-txt-lower-txt {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.footer-txt-upper-txt h3,
+.footer-txt-lower-txt h3 {
+  font-family: "OpenSans-Bold";
+}
+
+.footer-txt-upper-txt p,
+.footer-txt-lower-txt p {
+  font-family: "OpenSans-SemiBold";
+}
+
+.footer-bottom p {
+  font-family: "OpenSans-Regular";
+}
+
+.rodape {
+  color: white;
+  text-align: center;
+  font-size: 1.25rem;
+}

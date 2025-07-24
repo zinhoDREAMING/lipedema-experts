@@ -1,0 +1,796 @@
+/* REPONSIVIDADE */
+
+@media screen and (max-width: 1380px) {
+  .interface {
+    width: 1000px;
+  }
+
+  .background {
+    margin: 0 30px 15px 30px;
+    padding: 10px;
+  }
+
+  /* HEADER RESPONSE */
+
+  header .interface {
+    width: 1000px;
+  }
+
+  .background-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* PAG2 RESPONSE */
+
+  .pag2-box {
+    flex-direction: column-reverse;
+  }
+
+  /* PAG5 RESPONSE */
+
+  .pag5-box {
+    flex-direction: column-reverse;
+  }
+
+  /* PAG6 RESPONSE */
+
+  .a1 {
+    width: 100%;
+  }
+
+  /* PAG9 RESPONSE */
+
+  .pag9-box {
+    flex-direction: column-reverse;
+  }
+
+  /* PAG10 RESPOSNE */
+
+  .pag10-especialistas1 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .pag10-especialistas2 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* PAGINA DE PATROCINIO */
+
+  .box-patrocinadores {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .box-patrocinadores img {
+    aspect-ratio: auto;
+  }
+
+  /* PAG BUTTON */
+
+  .pag-button-box {
+    width: 100%;
+  }
+
+  .pag-button-box button {
+    font-size: 3rem;
+  }
+
+  /* FOOTER RESPONSE */
+
+  .footer-box1 {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-box {
+    margin: 40px 0;
+    gap: 10px;
+  }
+
+  .footer-txt-upper {
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .footer-txt-lower {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  * {
+    font-size: 16px;
+  }
+
+  header .interface {
+    margin: 0;
+    width: 800px;
+  }
+
+  .interface {
+    width: 800px;
+  }
+
+  /* HEADER */
+
+  .logo-branca {
+    display: none;
+  }
+
+  .logo-branca-mobile {
+    display: grid;
+  }
+
+  /* PAG1 RESPONSE */
+
+  .pag1-box h2 {
+    font-size: 3rem;
+  }
+
+  .pag1-box img {
+    width: 70%;
+  }
+
+  /* PAG2 RESPONSE */
+
+  .pag2-box {
+    flex-direction: column-reverse;
+  }
+
+  .pag2 h2 {
+    font-size: 3rem;
+  }
+
+  .pag2 p {
+    font-size: 1.5rem;
+  }
+
+  /* PAG3 RESPONSE */
+
+  .pag3 h2 {
+    font-size: 3rem;
+  }
+
+  .pag3 p {
+    font-size: 1.5rem;
+  }
+
+  /* PAG4 RESPONSE */
+
+  .pag4 h1 {
+    font-size: 3rem;
+  }
+
+  .pag4 p {
+    font-size: 1.5rem;
+  }
+
+  .pag4 h2 {
+    font-size: 1.5rem;
+  }
+
+  /* PAG5 RESPONSE */
+
+  .pag5-box {
+    flex-direction: column-reverse;
+  }
+
+  .pag5 h1 {
+    font-size: 3rem;
+  }
+
+  .pag5 p {
+    font-size: 1.5rem;
+  }
+
+  .pag5 span {
+    font-size: 1.5rem;
+  }
+
+  /* PAG6 RESPONSE */
+
+  .pag6 h2 {
+    font-size: 3rem;
+  }
+
+  .pag6 h3 {
+    font-size: 2rem;
+  }
+
+  .pag6 p {
+    font-size: 1.5rem;
+  }
+
+  .a1 {
+    width: 100%;
+  }
+
+  /* PAG7 RESPONSE */
+
+  .pag7 h2 {
+    font-size: 3rem;
+  }
+
+  /* PAG8 RESPONSE */
+
+  .pag8 button {
+    font-size: 2rem;
+  }
+
+  /* PAG9 RESPONSE */
+
+  .pag9-box {
+    flex-direction: column-reverse;
+  }
+
+  .pag9 h2 {
+    font-size: 2.5rem;
+  }
+
+  .pag9 p {
+    font-size: 1.5rem;
+  }
+
+  /* PAG10 RESPONSE */
+
+  .pag10-especialistas1 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px 32px;
+  }
+
+  .pag10-especialistas2 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px 32px;
+  }
+
+  .pag9-box-esp-1 h2 {
+    font-size: 1.3rem;
+  }
+
+  /* PAG11 RESPONSE */
+
+  .pag11 h2 {
+    font-size: 2.5rem;
+  }
+
+  .pag11 p {
+    font-size: 1.5rem;
+  }
+
+  .pag11 span {
+    font-size: 2.5rem;
+  }
+
+  /* PAG LOCATION */
+
+  .pag-location h2 {
+    font-size: 3rem;
+  }
+
+  .pag-location {
+    font-size: 1.5rem;
+  }
+
+  .pag-location-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .pag-loc-img-txt {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* PAG BUTTON */
+
+  .pag-button-box {
+    width: 100%;
+  }
+
+  .pag-button-box button {
+    font-size: 2rem;
+  }
+
+  /* FOOTER RESPONSE */
+
+  .footer-row1 {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .interface {
+    width: 500px;
+  }
+
+  /* HEADER */
+
+  header .interface {
+    width: 500px;
+  }
+
+  /* PAG1 RESPONSE */
+
+  .pag1-box h2 {
+    font-size: 2.5rem;
+  }
+
+  .pag1-box img {
+    width: 50%;
+  }
+
+  /* PAG2 RESPONSE */
+
+  .pag2-box img {
+    width: 100%;
+  }
+
+  /* PAG5 RESPONSE */
+
+  .pag5-box img {
+    width: 100%;
+  }
+
+  /* PAG9 RESPONSE */
+
+  .pag9-box img {
+    width: 100%;
+  }
+
+  /* PAG9 RESPONSE */
+
+  .pag-location-box img {
+    width: 100%;
+  }
+
+  .pag-loc-img-txt img {
+    width: 75px;
+    height: 75px;
+  }
+
+  /* PAG6 RESPONSE */
+
+  .pag6 h2 {
+    font-size: 3rem;
+  }
+
+  .pag6 h3 {
+    font-size: 2rem;
+  }
+
+  .pag6 p {
+    font-size: 1.5rem;
+  }
+
+  .a1 {
+    width: 100%;
+  }
+
+  .pag6-boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 10%);
+    border-radius: 60px;
+    text-align: left;
+  }
+
+  .pag6-boxes-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 510px) {
+  html {
+    font-size: 16px;
+  }
+
+  /* HEADER/MENU RESPONSE */
+
+  header .interface {
+    width: 100%;
+  }
+
+  .interface {
+    width: 100%;
+    margin: 0 30px;
+  }
+
+  .background {
+    margin: 0 15px 35px 15px;
+  }
+
+  header .background-header {
+    margin: 0 15px 0;
+  }
+
+  header .interface {
+    justify-content: space-evenly;
+  }
+
+  nav.menu a {
+    font-size: 0.9rem;
+  }
+
+  nav.menu-paises a {
+    font-size: 0.9rem;
+  }
+
+  .paises img {
+    width: 29px;
+    height: 29px;
+  }
+
+  .subscribir {
+    display: none;
+  }
+
+  .logo-branca {
+    display: none;
+  }
+
+  .logo-branca-mobile {
+    display: grid;
+    width: 45px;
+    height: 50px;
+  }
+
+  header.rolar {
+    display: none;
+  }
+
+  .background-header.transparent {
+    display: none;
+  }
+
+  .pag1-box,
+  .pag2-box,
+  .pag3-box,
+  .pag4-box,
+  .pag5-box,
+  .pag6-box,
+  .pag7-box,
+  .pag8-box,
+  .pag9-box,
+  .pag10-box,
+  .pag11-box,
+  .pag-location-box,
+  .pag-button-box,
+  .pag-patro-box,
+  .footer-box {
+    margin: 30px 0 30px 0;
+  }
+
+  /* PAG1 RESPONSE */
+
+  .pag1-box img {
+    width: 50%;
+  }
+
+  .pag1 h2 {
+    font-size: 2rem;
+  }
+
+  /* PAG2 RESPONSE */
+
+  .pag2-box {
+    flex-direction: column;
+  }
+
+  .pag2-txt {
+    width: 100%;
+  }
+
+  .pag2-img img {
+    width: 100%;
+  }
+
+  .pag2-img {
+    gap: 15px;
+  }
+
+  .pag2-txt h2 {
+    font-size: 2rem;
+  }
+
+  .pag2-txt p {
+    font-size: 1rem;
+  }
+
+  /* PAG3 RESPONSE */
+
+  .pag3 h2 {
+    font-size: 2rem;
+  }
+
+  .pag3 p {
+    font-size: 1.2rem;
+  }
+
+  .pag3-h3 {
+    font-size: 2rem;
+  }
+
+  .pag3 p {
+    font-size: 1.5rem;
+  }
+
+  /* PAG4 RESPONSE */
+
+  .pag4-txt p {
+    font-size: 1.3rem;
+  }
+
+  .pag4-check-1 {
+    padding: 10px;
+    gap: 15px;
+  }
+
+  .pag4-txt h1 {
+    font-size: 2rem;
+  }
+
+  .pag4-check-1 i {
+    font-size: 60px;
+  }
+
+  .pag4-check-1 h2 {
+    font-size: 1.4rem;
+  }
+
+  .pag4-check-1 p {
+    font-size: 1.3rem;
+  }
+
+  /* PAG5 RESPONSE */
+
+  .pag5-box {
+    flex-direction: column-reverse;
+  }
+
+  .pag5-img img {
+    width: 100%;
+  }
+
+  .pag5-txt p {
+    font-size: 1.5rem;
+  }
+
+  .pag5-txt span {
+    font-size: 1.5rem;
+  }
+
+  /* PAG6 RESPONSE */
+
+  .pag6-box {
+    width: 100%;
+  }
+
+  .pag6-boxes {
+    padding: 20px;
+    gap: 30px;
+    width: 100%;
+  }
+
+  .pag6-boxes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .a1 {
+    width: 288px;
+    height: 300px;
+    border-radius: 60px;
+  }
+
+  .pag6-grid-form img {
+    width: 17%;
+  }
+
+  .pag6-box-txt h2 {
+    font-size: 2rem;
+  }
+
+  .pag6-box-txt p {
+    font-size: 1rem;
+  }
+
+  .pag6-boxes-txt h2 {
+    font-size: 2rem;
+  }
+
+  .pag6-boxes-txt p {
+    font-size: 1rem;
+  }
+
+  .pag6-grid-form h3 {
+    font-size: 2rem;
+  }
+
+  .pag6-grid-form p {
+    font-size: 1rem;
+  }
+
+  /* PAG7 RESPONSE */
+
+  .pag7-box h2 {
+    font-size: 2rem;
+  }
+
+  /* PAG8 RESPONSE */
+
+  .pag8-box button {
+    font-size: 1.2rem;
+  }
+
+  /* PAG9 RESPONSE */
+
+  .pag9-box {
+    flex-direction: column-reverse;
+  }
+
+  .pag9-box img {
+    width: 100%;
+  }
+
+  .pag9-img {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .pag9-txt h2 {
+    font-size: 1.5rem;
+  }
+
+  .pag9-txt p {
+    font-size: 1rem;
+  }
+
+  .pag9-txt button {
+    font-size: 1.3rem;
+  }
+
+  /* PAG10 RESPONSE */
+
+  .pag10 h2 {
+    font-size: 3rem;
+  }
+
+  /* LAYOUT PADRÃO DOS CARDS */
+
+  .pag10-especialistas1 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pag10-especialistas2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pag9-box-esp-1 {
+    text-align: center;
+  }
+
+  .pag9-box-esp-1 p {
+    font-size: 1rem;
+  }
+
+  .pag9-box-esp-1 img {
+    width: 100%;
+  }
+
+  .pag9-box-esp-1 h2 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  /* PAG11 RESPONSE */
+
+  .pag11-box h2 {
+    font-size: 2rem;
+  }
+
+  .pag11-box p {
+    font-size: 1rem;
+  }
+
+  /* PAG-LOCATION RESPONSE */
+
+  .pag-location-box {
+    margin: 35px 0 35px 0;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .pag-location-box h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .pag-location-box p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .pag-loc-loc {
+    text-align: center;
+  }
+
+  .pag-loc-img-txt {
+    font-size: 1rem;
+  }
+
+  .pag-loc-loc img {
+    width: 311px;
+    height: 311px;
+  }
+
+  /* PAG-BUTTON RESPONSE */
+
+  .pag-button-box {
+    margin: 0;
+  }
+
+  .pag-button-box button {
+    width: 100%;
+    height: 10%;
+    padding: 0 10px;
+    font-size: 1.3rem;
+  }
+
+  /* PAG-PATROCINADORES RESPONSE */
+
+  .pag-patro-box {
+    margin: 35px 0 35px 0;
+  }
+
+  .pag-patro-box h3 {
+    font-size: 2rem;
+  }
+
+  .box-patrocinadores {
+    flex-direction: column;
+  }
+
+  .box-patrocinadores img {
+    width: 250px;
+    height: 80px;
+  }
+
+  .box-colaboradores img {
+    max-width: 130px;
+    max-height: 130px;
+  }
+
+  /* FOOTER RESPONSE */
+
+  .logo-footer {
+    width: 100%;
+  }
+
+  .footer-box1 {
+    flex-direction: column;
+  }
+
+  .footer-box {
+    margin: 40px 0;
+    gap: 10px;
+  }
+
+  .footer-txt-upper {
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .footer-txt-lower {
+    gap: 10px;
+  }
+
+  .rodape {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,823 @@
+/* REPONSIVIDADE */
+
+@media screen and (max-width: 1380px) {
+  .interface {
+    width: 1000px;
+  }
+
+  .background {
+    margin: 0 30px 15px 30px;
+    padding: 10px;
+  }
+
+  /* PAG1 RESPONSE */
+
+  .pag1-txt1 h1 {
+    font-size: 3rem;
+  }
+
+  .pag1-txt2 p {
+    font-size: 1.5rem;
+  }
+
+  .pag1-bg-img img {
+    width: 70%;
+  }
+
+  /* PAG2 RESPONSE */
+
+  .pag2-box {
+    flex-direction: column-reverse;
+  }
+
+  .pag2-box img {
+    width: 100%;
+  }
+
+  .pag2-txt1 h1 {
+    font-size: 3rem;
+  }
+
+  .pag2-txt2 p {
+    font-size: 1.5rem;
+  }
+
+  /* PAG3 RESPONSE */
+
+  .pag3-box {
+    flex-direction: column;
+  }
+
+  .pag3-box img {
+    width: 100%;
+  }
+
+  .pag3-txt1 h1 {
+    font-size: 3rem;
+  }
+
+  .pag3-txt2 p {
+    font-size: 1.5rem;
+  }
+
+  /* PAG4 RESPONSE */
+
+  .pag4-box {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .pag4-ask-box {
+    font-size: 1.5rem;
+  }
+
+  .pag4-ask1,
+  .pag4-ask2,
+  .pag4-ask3,
+  .pag4-ask4 {
+    font-size: 1.5rem;
+  }
+
+  .pag4-txt1 h1 {
+    font-size: 2rem;
+  }
+
+  .pag4-txt1 span {
+    font-size: 3rem;
+  }
+
+  .pag4-txt2 p {
+    font-size: 1.5rem;
+  }
+
+  /* PAG5 RESPONSE */
+
+  .pag5-txt1 h1 {
+    font-size: 3rem;
+  }
+
+  .pag5-txt2 p {
+    font-size: 1.5rem;
+  }
+
+  /* PAG6 RESPONSE */
+
+  .pag6 h1 {
+    font-size: 3rem;
+  }
+
+  .pag6 p {
+    font-size: 1.5rem;
+  }
+
+  /* PAG7 RESPONSE */
+
+  .pag7-box {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pag7-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: left;
+  }
+
+  .pag7-txt h1 {
+    font-size: 3rem;
+  }
+
+  .pag7-txt p {
+    font-size: 1.5rem;
+  }
+
+  .pag7-row1 {
+    display: flex;
+    gap: 30px;
+  }
+
+  .pag7-row1 img {
+    width: 100%;
+  }
+
+  .pag7-row1 p {
+    font-size: 1.3rem;
+  }
+
+  .pag7-profissao-flag img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .pag7-profissao-flag p {
+    font-size: 1.2rem;
+  }
+
+  .pag7-doc5 img {
+    width: 80%;
+  }
+
+  .pag7-doc5 p {
+    font-size: 1.3rem;
+  }
+
+  /* PAG8 RESPONSE */
+
+  .pag8-box {
+    flex-direction: column-reverse;
+  }
+
+  .pag8-box img {
+    width: 100%;
+  }
+
+  .pag8 h1 {
+    font-size: 3rem;
+  }
+
+  .pag8 p {
+    font-size: 1.5rem;
+  }
+
+  /* PAG9 RESPONSE */
+
+  .pag9 h1 {
+    font-size: 3rem;
+  }
+
+  .pag9 p {
+    font-size: 1.5rem;
+  }
+
+  /* PAG10 RESPONSE */
+
+  .pag10-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .pag10-box img {
+    width: 100%;
+  }
+
+  .pag10 h2 {
+    font-size: 3rem;
+  }
+
+  .pag10 p {
+    font-size: 1.5rem;
+  }
+
+  .pag10 button {
+    font-size: 1.5rem;
+  }
+
+  /* PAG11 RESPONSE */
+
+  .pag11-box h2 {
+    font-size: 3rem;
+  }
+
+  /* PAGINA DE PATROCINIO */
+
+  .box-patrocinadores {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .box-patrocinadores img {
+    aspect-ratio: auto;
+  }
+
+  /* PAG-BUTTON STYLES */
+
+  .pag-button .background {
+    background-image: url(../images/pag13-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .pag-button-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .pag-button-box button {
+    font-size: 3rem;
+    width: 100%;
+    padding: 0 30px;
+  }
+
+  /* FOOTER RESPONSE */
+
+  .footer-box1 {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-box {
+    margin: 40px 0;
+    gap: 10px;
+  }
+
+  .footer-txt-upper {
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .footer-txt-lower {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .pag1-box,
+  .pag2-box,
+  .pag3-box,
+  .pag4-box,
+  .pag5-box,
+  .pag6-box,
+  .pag7-box,
+  .pag8-box,
+  .pag9-box,
+  .pag10-box,
+  .pag11-box,
+  .pag-location-box,
+  .pag-button-box,
+  .pag-patro-box,
+  .footer-box {
+    margin: 50px 0 50px 0;
+  }
+
+  .interface {
+    width: 800px;
+  }
+
+  header .interface {
+    width: 800px;
+  }
+
+  /* HEADER RESPONSE */
+
+  .logo-branca {
+    display: none;
+  }
+
+  .logo-branca-mobile {
+    display: grid;
+  }
+
+  /* PAG1 RESPONSE */
+
+  .pag1-txt p {
+    font-size: 1.5rem;
+  }
+
+  .pag1-txt h1 {
+    font-size: 3rem;
+  }
+
+  .pag1-img img {
+    max-width: 200px;
+    min-width: 143px;
+  }
+
+  .box-patrocinadores img {
+    max-width: 390px;
+    min-width: 280px;
+  }
+
+  /* PAG LOCATION */
+
+  .pag-location-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .pag-location-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .pag-loc-loc {
+    width: 100%;
+    height: 100%;
+  }
+
+  .pag-loc-img-txt {
+    flex-direction: column;
+  }
+
+  .pag-location h2 {
+    font-size: 3rem;
+  }
+
+  .pag-location p {
+    font-size: 1.5rem;
+  }
+
+  .pag-loc-img-txt {
+    font-size: 1.3rem;
+  }
+
+  /* FOOTER RESPONSE */
+
+  .footer-row1 {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .interface {
+    width: 600px;
+  }
+
+  header .interface {
+    width: 600px;
+    gap: 0;
+  }
+}
+
+/* PAG7 RESPONSE */
+
+.pag7-box {
+  gap: 30px;
+}
+
+.pag7-row1 {
+  flex-direction: column;
+}
+
+.pag7-doc5 img {
+  width: 100%;
+}
+
+@media screen and (max-width: 780px) {
+  .pag1-img img {
+    max-width: 160px;
+    min-width: 143px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  /* HEADER/MENU RESPONSE */
+
+  header .interface {
+    width: 100%;
+  }
+
+  .interface {
+    width: 100%;
+    margin: 0 20px;
+  }
+
+  .background {
+    margin: 0 15px 35px 15px;
+  }
+
+  header .background-header {
+    margin: 0 15px 0;
+  }
+
+  header .interface {
+    justify-content: space-between;
+  }
+
+  nav.menu a {
+    font-size: 0.9rem;
+  }
+
+  nav.menu-paises a {
+    font-size: 0.9rem;
+  }
+
+  .menu-desktop {
+    margin-left: 15px;
+  }
+
+  .subscribir {
+    display: none;
+  }
+
+  .logo-branca {
+    display: none;
+    width: 45px;
+    height: 50px;
+  }
+
+  .logo-branca-mobile {
+    display: grid;
+    width: 45px;
+    height: 50px;
+  }
+
+  .paises img {
+    width: 29px;
+    height: 29px;
+  }
+
+  .ativos {
+    margin-right: 30px;
+  }
+
+  header.rolar {
+    display: none;
+  }
+
+  .background-header.transparent {
+    display: none;
+  }
+
+  .pag1-box,
+  .pag2-box,
+  .pag3-box,
+  .pag4-box,
+  .pag5-box,
+  .pag6-box,
+  .pag7-box,
+  .pag8-box,
+  .pag9-box,
+  .pag10-box,
+  .pag11-box,
+  .pag-location-box,
+  .pag-button-box,
+  .pag-patro-box,
+  .footer-box {
+    margin: 30px 0 30px 0;
+  }
+
+  /* PAG1 RESPONSE */
+
+  .pag1 img {
+    width: 50%;
+  }
+
+  .pag1 .pag1-txt1 h1 {
+    font-size: 2.5rem;
+  }
+
+  .pag1 .pag1-txt2 p {
+    font-size: 1.5rem;
+  }
+
+  /* PAG2 RESPONSE */
+
+  .pag2-box {
+    flex-direction: column-reverse;
+  }
+
+  .pag2-txt1 h1 {
+    font-size: 2.2rem;
+  }
+
+  .pag2-txt2 p {
+    font-size: 1.2rem;
+  }
+
+  .pag2-img-box {
+    gap: 15px;
+  }
+
+  .pag2 img {
+    width: 30%;
+  }
+
+  /* PAG3 RESPONSE */
+
+  .pag3-box {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .pag3-txt-box {
+    align-items: start;
+  }
+
+  .pag3-txt1 h1 {
+    font-size: 2.2rem;
+    text-align: left;
+  }
+
+  .pag3-txt2 p {
+    font-size: 1.2rem;
+    text-align: left;
+  }
+
+  .pag3-box img {
+    width: 100%;
+  }
+
+  /* PAG4 RESPONSE */
+
+  .pag4-ask-box {
+    font-size: 1.2rem;
+  }
+
+  .pag4-ask1,
+  .pag4-ask2,
+  .pag4-ask3,
+  .pag4-ask4 {
+    font-size: 1.2rem;
+  }
+
+  .pag4-txt1 h1 {
+    font-size: 1.5rem;
+  }
+
+  .pag4-txt1 span {
+    font-size: 2.5rem;
+  }
+
+  .pag4-txt2 p {
+    font-size: 1.2rem;
+  }
+
+  /* PAG5 RESPONSE */
+
+  .pag5-txt1 h1 {
+    font-size: 2.5rem;
+  }
+
+  .pag5-txt2 p {
+    font-size: 1.3rem;
+  }
+
+  /* PAG6 RESPONSE */
+
+  .pag6 h1 {
+    font-size: 2.5rem;
+  }
+
+  .pag6 p {
+    font-size: 1.3rem;
+  }
+
+  .pag6-row1,
+  .pag6-row2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pag6-caixa1,
+  .pag6-caixa2,
+  .pag6-caixa3,
+  .pag6-caixa4,
+  .pag6-caixa5,
+  .pag6-caixa6 {
+    max-width: 370px;
+    min-height: 350px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .pag6-caixa1 img,
+  .pag6-caixa2 img,
+  .pag6-caixa3 img,
+  .pag6-caixa4 img,
+  .pag6-caixa5 img,
+  .pag6-caixa6 img {
+    width: 60px;
+    height: 60px;
+  }
+
+  /* PAG7 RESPONSE */
+
+  .pag7-box {
+    gap: 70px;
+  }
+
+  .pag7-txt h1 {
+    font-size: 2.2rem;
+  }
+
+  .pag7-txt p {
+    font-size: 1.3rem;
+  }
+
+  .pag7-row1 p {
+    font-size: 1.3rem;
+  }
+
+  .pag7-profissao-flag p {
+    font-size: 1.2rem;
+  }
+
+  /* PAG8 RESPONSE */
+
+  .pag8-box {
+    flex-direction: column-reverse;
+  }
+
+  .pag8-box img {
+    width: 100%;
+  }
+
+  .pag8-txt h2 {
+    font-size: 2.5rem;
+  }
+
+  .pag8-txt h1 {
+    font-size: 2rem;
+  }
+
+  .pag8-txt p {
+    font-size: 1.5rem;
+  }
+
+  /* PAG9 RESPONSE */
+
+  .pag9-box h2 {
+    font-size: 2.2rem;
+  }
+
+  .pag9-box p {
+    font-size: 1.3rem;
+  }
+
+  /* PAG10 RESPONSE */
+
+  .pag10-box {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .pag10-img {
+    gap: 15px;
+  }
+
+  .pag10-img img {
+    width: 100%;
+  }
+
+  .pag10-box h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1.3rem;
+  }
+
+  .pag10-box p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+  }
+
+  .pag10-box button {
+    font-size: 1.3rem;
+    cursor: pointer;
+    padding: 15px;
+  }
+
+  /* PAG11 RESPONSE */
+
+  .pag11-box h2 {
+    font-size: 2.2rem;
+  }
+
+  /* PAG-LOCATION RESPONSE */
+
+  .pag-location-box {
+    margin: 35px 0 35px 0;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .pag-location-box h2 {
+    font-size: 2.25rem;
+    text-align: center;
+  }
+
+  .pag-location-box p {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  .pag-loc-loc {
+    text-align: center;
+  }
+
+  .pag-loc-img-txt {
+    font-size: 1.25rem;
+  }
+
+  .pag-loc-loc img {
+    width: 311px;
+    height: 311px;
+  }
+
+  /* PAG-BUTTON RESPONSE */
+
+  .pag-button-box {
+    margin: 0;
+  }
+
+  .pag-button-box button {
+    width: 100%;
+    height: 10%;
+    font-size: 1.3rem;
+    padding: 0 14px;
+  }
+
+  /* PAG-PATROCINADORES RESPONSE */
+
+  .pag-patro-box {
+    margin: 35px 0 35px 0;
+  }
+
+  .pag-patro-box h3 {
+    font-size: 2.25rem;
+  }
+
+  .box-patrocinadores {
+    flex-direction: column;
+  }
+
+  .box-patrocinadores img {
+    width: 250px;
+    height: 80px;
+  }
+
+  .box-colaboradores img {
+    max-width: 130px;
+    max-height: 130px;
+  }
+
+  /* FOOTER RESPONSE */
+
+  .logo-footer {
+    width: 100%;
+  }
+
+  .footer-box1 {
+    flex-direction: column;
+  }
+
+  .footer-box {
+    margin: 40px 0;
+    gap: 10px;
+  }
+
+  .footer-txt-upper {
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .footer-txt-lower {
+    gap: 10px;
+  }
+
+  .rodape {
+    font-size: 1rem;
+  }
+}
